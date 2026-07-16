@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 1 Year Anniversary, My Love!</title>
+  <style>
+    /* --- Accessible Pink Palette CSS Variables --- */
+    :root {
+      --primary-pink: #d81b60;      /* Vibrant, accessible deep pink */
+      --dark-magenta: #880e4f;      /* High contrast dark berry for text */
+      --light-rose: #fff0f5;        /* Soft lavender-blush background */
+      --white: #ffffff;
+      --text-dark: #2c2c2c;
+      --focus-blue: #0056b3;       /* Strong outline for keyboard navigation accessibility */
+    }
+
+    /* --- Reset & Base Styles --- */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--light-rose);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    /* Keyboard Navigation Focus Outline */
+    a:focus, button:focus, video:focus {
+      outline: 3px solid var(--focus-blue);
+      outline-offset: 4px;
+    }
+
+    /* Skip to content link for accessibility */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--primary-pink);
+      color: white;
+      padding: 8px;
+      z-index: 100;
+      text-decoration: none;
+      transition: top 0.2s ease;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* --- Hero Banner --- */
+    header {
+      background: linear-gradient(135deg, #ff8da1, var(--primary-pink));
+      color: white;
+      text-align: center;
+      padding: 6rem 1rem;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    header p {
+      font-size: 1.3rem;
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.95;
+    }
+
+    /* --- Layout Container --- */
+    main {
+      max-width: 950px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 4px 15px rgba(216, 27, 96, 0.08);
+    }
+
+    h2 {
+      color: var(--dark-magenta);
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      border-bottom: 3px solid var(--light-rose);
+      padding-bottom: 0.5rem;
+    }
+
+    /* --- LDR Message Block --- */
+    .ldr-message {
+      font-size: 1.15rem;
+      line-height: 1.8;
+      border-left: 5px solid var(--primary-pink);
+      padding-left: 1.5rem;
+      margin: 1.5rem 0;
+      color: #3d3d3d;
+      font-style: italic;
+    }
+
+    /* --- Media Galleries --- */
+    .media-section-title {
+      font-size: 1.4rem;
+      color: var(--primary-pink);
+      margin: 2rem 0 1rem;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .media-card {
+      background: #fafafa;
+      border: 1px solid #f0ccd8;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    /* Keep pictures and video players uniform and accessible */
+    .media-card img, 
+    .media-card video {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      display: block;
+      background-color: #000;
+    }
+
+    .media-caption {
+      padding: 1.2rem;
+      font-size: 1rem;
+      color: var(--text-dark);
+      text-align: center;
+      background: var(--white);
+      border-top: 1px solid #f0ccd8;
+      flex-grow: 1;
+    }
+
+    /* --- Accessible Timeline --- */
+    .timeline {
+      position: relative;
+      padding-left: 2rem;
+      border-left: 3px solid var(--primary-pink);
+      margin-top: 1.5rem;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -2.45rem;
+      top: 0.3rem;
+      background: var(--primary-pink);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+    }
+
+    .timeline-date {
+      font-weight: bold;
+      color: var(--primary-pink);
+      font-size: 1.1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    /* --- Footer --- */
+    footer {
+      text-align: center;
+      padding: 4rem 1rem;
+      color: var(--dark-magenta);
+      font-weight: 600;
+    }
+
+    footer .heart {
+      color: var(--primary-pink);
+    }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <h1>Happy 1 Year, My Love!</h1>
+    <p>365 days of miles between us, but absolutely zero distance in our hearts.</p>
+  </header>
+
+  <main id="main-content">
+    
+    <!-- SECTION 1: LDR Message -->
+    <section aria-labelledby="story-heading">
+      <h2 id="story-heading">No Distance Can Change How Much I Love You</h2>
+      <div class="ldr-message">
+        <p>"Even though the miles keep us apart day-to-day, looking at your smile makes every single second of the distance worth it. This past year has been the happiest year of my life, and I am so incredibly lucky to call you mine. Happy 1-year anniversary!"</p>
+      </div>
+    </section>
+
+    <!-- SECTION 2: Timeline of Us -->
+    <section aria-labelledby="timeline-heading">
+      <h2 id="timeline-heading">Our First Year Together</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <p class="timeline-date">The Beginning</p>
+          <h3>Where Love Started</h3>
+          <p>Taking a leap of faith, starting our journey, and learning that true connection knows absolutely no geographical boundaries.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Through Every Video Call</p>
+          <h3>Keeping Each Other Close</h3>
+          <p>Countless late-night FaceTime dates, falling asleep on calls, and sharing every small part of our days together.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="timeline-date">Today</p>
+          <h3>Celebrating 365 Days</h3>
+          <p>Looking back at our favorite memories, celebrating our strength, and eagerly counting down the days until we are side-by-side again.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Gallery (Images & Videos) -->
+    <section aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Our Favorite Memories</h2>
+      
+      <!-- Photo Grid Section -->
+      <h3 class="media-section-title">Our Photos</h3>
+      <div class="media-grid">
+
+        <!-- Photo 1: Girlfriend smiling happily close-up -->
+        <article class="media-card">
+          <img src="IMG_1014" alt="A gorgeous close-up selfie of my girlfriend smiling warmly at the camera with her beautiful braids.">
+          <p class="media-caption">The smile that makes every single mile worth it.</p>
+        </article>
+
+        <!-- Photo 2: Girlfriend facing camera -->
+        <article class="media-card">
+          <img src="IMG_1015" alt="My girlfriend looking beautiful and facing the camera directly in her warm golden top.">
+          <p class="media-caption">My favorite face in the entire world.</p>
+        </article>
+
+        <!-- Photo 3: Smiling near the giant pink teddy bear -->
+        <article class="media-card">
+          <img src="IMG_9422" alt="A sweet snapshot of my girlfriend smiling next to a massive, cute pink teddy bear holding a rainbow heart.">
+          <p class="media-caption">Posing with the adorable pink teddy bear!</p>
+        </article>
+
+        <!-- Photo 4: Beautiful photo collage frame -->
+        <article class="media-card">
+          <img src="IMG_1013" alt="A photo grid layout featuring beautiful, styling shots of my gorgeous girlfriend.">
+          <p class="media-caption">Stunning through and through.</p>
+        </article>
+
+	<!-- Photo 5: Girlfriend Laying Down -->
+	<article class="media-card">
+          <img src="image7" alt= "beautiful baby lying in bed while on the phone.">
+          <p class="media-caption">Beautiful baby lying in bed while on the phone.</p>
+	</article>
+
+        <!-- Photo 5: Beautiful photo with new hair -->
+	<article class="media-card">
+          <img src="image4" alt= “My Baby trying on the new wig we bought. Stunning.">
+          <p class="media-caption">My Baby trying on the new wig we bought. Stunning.</p>
+        </article>
+          
+	<!-- Photo 6: Girlfriend out with friends -->
+          <article class="media-card">
+  <img src="image9" alt="My Baby looking beautiful while out.">
+  <p class="media-caption">My Baby looking beautiful while outr.</p>
+</article>
+
+      </div>
+
+      <!-- Video Grid Section -->
+      <h3 class="media-section-title">Our Videos</h3>
+      <div class="media-grid">
+
+        <!-- Video 1: Waving / Blue outfit -->
+        <article class="media-card">
+          <!-- Uses 'controls' for accessibility so she can play, pause, and adjust volume easily -->
+          <video src="video1.mov" controls preload="metadata" aria-label="A sweet clip of my girlfriend showing off her stylish bright blue outfit."></video>
+          <p class="media-caption">Showing off the beautiful blue outfit!</p>
+        </article>
+
+        <!-- Video 2: Giant teddy bear FaceTime screen recording -->
+        <article class="media-card">
+          <video src="video2.mp4" controls preload="metadata" aria-label="A screen recording of a FaceTime video call where she is smiling and hugging her giant pink teddy bear."></video>
+          <p class="media-caption">Our FaceTime dates with the giant pink bear.</p>
+        </article>
+	 <article class="media-card">
+          <video src="video20.mp4" controls preload="metadata" aria-label="Our first date, my baby looks so amazong."></video>
+          <p class="media-caption">A sweet caption describing the clip.</p>
+        </article>
+        <article class="media-card">
+          <video src="video19.mp4" controls preload="metadata" aria-label=" We held hands and oh my her hands are small.."></video>
+          <p class="media-caption">A sweet caption describing the clip.</p>
+      </article>
+        <article class="media-card">
+          <video src="video17.mp4" controls preload="metadata" aria-label="A beautiful babe."></video>
+          <p class="media-caption">A sweet caption describing the clip.</p>
+    </article>
+        <article class="media-card">
+  <video src="video12.mp4" controls preload="metadata" aria-label="A quick outfit check, looking so sexy."></video>
+  <p class="media-caption">A sweet caption describing the clip.</p>
+</article>
+      <article class="media-card">
+  <video src="video3.mp4" controls preload="metadata" aria-label="Ahhh such a beauty."></video>
+  <p class="media-caption">A sweet caption describing the clip.</p>
+</article>
+        <article class="media-card">
+  <video src="video4.mp4" controls preload="metadata" aria-label="My baby looking stuning! Life of the Party."></video>
+  <p class="media-caption">A sweet caption describing the clip.</p>
+</article>
+        <article class="media-card">
+  <video src="video10.mp4" controls preload="metadata" aria-label="she used to love showing me now just keeps it to herself.."></video>
+  <p class="media-caption">A sweet caption describing the clip.</p>
+</article>
+        <article class="media-card">
+  <video src="video7.mp4" controls preload="metadata" aria-label="Another showing, which opens about half."></video>
+  <p class="media-caption">A sweet caption describing the clip.</p>
+</article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Made with all my love, always and forever <span class="heart" aria-hidden="true">♥</span></p>
+  </footer>
+
+</body>
+</html>
